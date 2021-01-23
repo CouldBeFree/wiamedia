@@ -1,0 +1,37 @@
+.contact-address {
+
+  margin-bottom: 25px;
+  @media (min-width: 576px) {
+    margin-bottom: 45px;
+    margin-top: 22px;
+  }
+  li {
+    letter-spacing: -0.44px;
+    font-size: 16px;
+    margin-bottom: 7px;
+    &:last-child {
+      margin-top: 2s0px;
+      @media (min-width: 576px) {
+        margin-top: 30px;
+      }
+    }
+    a {
+      color: $link-colour;
+      &:hover {
+        text-decoration: underline;
+        color: $link-colour;
+      }
+    }
+  }
+}
+.contact-button {
+  .submit-button {
+    margin-left: 20px;
+    width: calc(100% - 20px);
+    @media (min-width: 340px) {
+      margin-left: auto;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}

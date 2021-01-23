@@ -1,0 +1,167 @@
+.product-page {
+    .flex {
+        display: flex;
+    }
+
+    .button {
+        background: #FCCF03;
+        border-radius: 8px;
+        color: $main-color;
+        border: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Open Sans, sans-serif;
+        padding: 12px 34px;
+    }
+
+    & .intro-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & p {
+            margin: 0;
+        }
+
+        & .image-holder {
+            position: relative;
+            height: calc(100vh - 60px);
+        }
+
+        & .bottom-block {
+            background: linear-gradient(90.14deg, #FF7134 0%, #FF9236 52.08%, #F2A127 100%), linear-gradient(90.14deg, #E1254B 0%, #FB3B43 49.48%, #FF7134 100%);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            color: #FFFFFF;
+            min-height: 60px;
+
+            &__content {
+                margin: 0;
+                font-family: 'Assistant', sans-serif;
+            }
+
+            & .wrap {
+                display: flex;
+                align-content: center;
+            }
+
+            & .percentage {
+                color: #77FEFB;
+                font-weight: bold;
+            }
+        }
+
+        & .content-block {
+            color: #FFFFFF;
+            font-family: 'Assistant', sans-serif;
+            margin-bottom: 50px;
+
+            &__left {
+                & .product-name {
+                    font-size: 46px;
+                    text-transform: capitalize;
+                    font-family: inherit;
+                    margin-bottom: 30px;
+                    font-weight: bold;
+                    width: 80%;
+                }
+
+                & .date {
+                    margin: 0;
+                    padding-left: 22px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        position: absolute;
+                        background-image: url('../images/vector.png');
+                        left: 0;
+                        top: 4px;
+                    }
+                }
+            }
+
+            &__right {
+                & .price {
+                    font-weight: bold;
+                    font-size: 40px;
+                    font-family: inherit;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .content-holder {
+        margin-top: 40px;
+        font-family: Open Sans, sans-serif;
+
+        .socials-share-list {
+
+            li {
+                margin-bottom: 16px;
+            }
+        }
+
+        .main-content {
+            &__content {
+                margin-right: 65px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                font-family: inherit;
+            }
+
+            &__social {
+
+            }
+
+            .content-holder {
+                max-width: 750px;
+            }
+        }
+
+        .content-block {
+            margin-top: 50px;
+
+            &__headline {
+                font-family: inherit;
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            &__content {
+                font-family: inherit;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        .social-label {
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 24px;
+            color: #393939;
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 13px;
+        }
+
+        .social-bottom {
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .slider-block {
+            & .slider {
+                max-width: 750px;
+            }
+        }
+    }
+}

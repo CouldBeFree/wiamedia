@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Assistant';
+  src: font-url('Assistant-Regular/Assistant-Regular.eot');
+  src: local('Assistant Regular'), local('Assistant-Regular/Assistant-Regular'),
+  font-url('Assistant-Regular/Assistant-Regular.woff2') format('woff2'),
+  font-url('Assistant-Regular/Assistant-Regular.woff') format('woff'),
+  font-url('Assistant-Regular/Assistant-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: font-url('Assistant-SemiBold/Assistant-SemiBold.eot');
+  src: local('Assistant SemiBold'), local('Assistant-SemiBold/Assistant-SemiBold'),
+  font-url('Assistant-SemiBold/Assistant-SemiBold.woff2') format('woff2'),
+  font-url('Assistant-SemiBold/Assistant-SemiBold.woff') format('woff'),
+  font-url('Assistant-SemiBold/Assistant-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: font-url('Assistant-Bold/Assistant-Bold.eot');
+  src: local('Assistant Bold'), local('Assistant-Bold/Assistant-Bold'),
+  font-url('Assistant-Bold/Assistant-Bold.woff2') format('woff2'),
+  font-url('Assistant-Bold/Assistant-Bold.woff') format('woff'),
+  font-url('Assistant-Bold/Assistant-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: font-url('OpenSans-Regular/OpenSans-Regular.eot');
+  src: local('OpenSans Regular'), local('OpenSans-Regular/OpenSans-Regular'),
+  font-url('OpenSans-Regular/OpenSans-Regular.woff2') format('woff2'),
+  font-url('OpenSans-Regular/OpenSans-Regular.woff') format('woff'),
+  font-url('OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: font-url('OpenSans-SemiBold/OpenSans-SemiBold.eot');
+  src: local('OpenSans SemiBold'), local('OpenSans-SemiBold/OpenSans-SemiBold'),
+  font-url('OpenSans-SemiBold/OpenSans-SemiBold.woff2') format('woff2'),
+  font-url('OpenSans-SemiBold/OpenSans-SemiBold.woff') format('woff'),
+  font-url('OpenSans-SemiBold/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  //font-display: swap;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: font-url('OpenSans-Bold/OpenSans-Bold.eot');
+  src: local('OpenSans Bold'), local('OpenSans-Bold/OpenSans-Bold'),
+  font-url('OpenSans-Bold/OpenSans-Bold.woff2') format('woff2'),
+  font-url('OpenSans-Bold/OpenSans-Bold.woff') format('woff'),
+  font-url('OpenSans-Bold/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

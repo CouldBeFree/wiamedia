@@ -1,0 +1,208 @@
+.contest-item {
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(57, 57, 57, 0.25);
+  background-color: #fff;
+  transition: .2s ease-in-out;
+  padding: 16px;
+  &:hover {
+    box-shadow: 0 1px 15px 0 rgba(57, 57, 57, 0.2);
+  }
+}
+
+.contest-item-title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.27;
+  letter-spacing: 0.2px;
+  a {
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+      color: $main-color;
+    }
+  }
+}
+
+.contest-item-img-link {
+  position: relative;
+  display: block;
+  margin-bottom: 24px;
+  .contest-item-passed {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 24px;
+    background-color: #393939;
+    text-align: center;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Assistant';
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+  }
+}
+
+.contest-hero-footer {
+  margin-top: 25px;
+}
+
+.contest-head {
+  @include color-concours;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 1px;
+  @media (min-width: 576px) {
+    margin-bottom: 45px;
+  }
+  &-top {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+  }
+  &-subtitle {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  &-countdown {
+    font-family: 'Assistant';
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -0.6px;
+  }
+  &-inner {
+    padding: 20px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #fbfbfb, #fbfbfb), linear-gradient(303deg, #1fa0bd 82%, #3cefea 5%);
+    @media (min-width: 576px) {
+      padding: 40px;
+    }
+  }
+  &-desc {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.47;
+    letter-spacing: -0.19px;
+  }
+  &-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+  }
+  &-form {
+    max-width: 555px;
+    margin: 0 auto;
+    .form-group {
+      margin-bottom: 8px;
+    }
+    .input {
+      height: 64px;
+      text-align: center;
+      font-size: 18px;
+      @media (min-width: 576px) {
+        font-size: 20px;
+      }
+    }
+    .form-submit {
+      height: 48px;
+      width: 150px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 24px auto 0;
+      border: none;
+      background-color: #fccf03;;
+    }
+  }
+  &-message {
+    padding: 15px;
+    max-width: 555px;
+    margin: 0 auto;
+    border-radius: 6px;
+    line-height: 1.7;
+    letter-spacing: -0.55px;
+    font-size: 20px;
+    &.success {
+      color: #73c43a;
+      border: solid 1px #69c02a;
+      background-color: #f8ffef;
+    }
+    &.info {
+      color: #048afa;
+      border: solid 1px #048afa;
+      background-color: #f6fbff;
+    }
+  }
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 64px;
+  border-radius: 6px;
+  border: solid 1px #c0c0c0;
+  background-color: #fff;
+  margin-bottom: 8px;
+  position: relative;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  &:hover,
+  &.active {
+    background-color: #393939;
+    color: #fff;
+    border-color: #393939;
+  }
+  label {
+    width: 100%;
+    padding: 10px;
+    line-height: 1.1;
+    letter-spacing: -0.55px;
+    font-size: 18px;
+    margin-bottom: 0;
+    cursor: pointer;
+    @media (min-width: 576px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.contest-hero-expired {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Assistant';
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 26px;
+  line-height: 26px;
+  background-color: $main-color;
+  @media (min-width: 576px) {
+    height: 36px;
+    line-height: 36px
+  }
+}

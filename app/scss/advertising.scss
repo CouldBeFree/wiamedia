@@ -1,0 +1,24 @@
+.banner-link {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .desktop-link {
+    display: none;
+  }
+
+  @media (min-width: 576px) {
+    .mobile-link {
+      display: none;
+    }
+
+    .desktop-link {
+      display: block;
+    }
+  }
+}

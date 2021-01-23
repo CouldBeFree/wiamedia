@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require font-awesome
+ *= require jquery-ui
+ *= require_self
+ */
+
+@import 'bootstrap';
+@import 'font-awesome';
+@import 'bootstrap-datetimepicker';
+@import 'dropzone/dropzone';
+@import 'redactor.min';
+@import 'redactor-plugins/alignment';
+@import 'chosen';
+@import "admin/sortable";
+@import "jquery.ccpicker";
+
+.admin-header-logo{
+  width: 141px;
+  height: 43px;
+}
+
+/* AASM LABELS*/
+.label{
+  padding: 5px;
+}
+
+.label.label-drafted, .label.label-pending {
+  background-color: #476CB4;
+}
+
+.label.label-accepted, .label.label-published {
+  background-color: #67af00;
+}
+
+.label.label-denied {
+  background-color: #D4260A;
+}
+.label{
+  a{
+    color: white !important;
+  }
+}
+.success{
+  background-color: #67af00;
+}
+.danger {
+  background-color: #D4260A;
+}
+
+#loader {
+  position: absolute;
+  z-index: 100;
+  background-color: #000000;
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  p {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+}
+
+.position {
+  cursor: move;
+}
+
+/* GLOBAL */
+.btn-back {
+  background-color: #5B5B5B;
+  border-color: #5B5B5B;
+  color: #ffffff;
+
+  &:hover, &:focus {
+    background-color: darken(#5B5B5B, 10%);
+    border-color: darken(#5B5B5B, 10%);
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+/* BREADCRUMBS */
+#breadcrumbs {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 0;
+
+  .breadcrumb {
+    margin-bottom: 0;
+  }
+}
+
+/* PAGINATION */
+.pagination {
+  margin: 0;
+}
+
+/* PANEL */
+.panel {
+  .panel-heading {
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .panel-body {
+    label {
+      display: block;
+    }
+  }
+
+  .panel-footer {
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#post_sub_category {
+  width: 100%;
+}
+
+// UI Sortable placeholder
+.ui-sortable-placeholder {
+  line-height: 70px !important;
+  background-color: #e5eaed !important;
+  border: 1px dashed #b6bcbf;
+  visibility: visible !important;
+}
+
+.sortable.ui-sortable tr {
+  background-color: #fff;
+}
+
+.ui-sortable-helper {
+  display: table;
+}
+
+.drag-item {
+  cursor: move;
+}
+
+.callout.alert {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+
+
+.input-phone-wrapper {
+  position: relative;
+
+  #user_telephone {
+    padding-left: 70px;
+  }
+
+  .cc-picker.cc-picker-code-select-enabled {
+    top: 32px;
+    left: 0;
+    font-size: 14px;
+    position: absolute;
+  }
+}
+div.cc-picker-flag {
+  width: 0;
+}
