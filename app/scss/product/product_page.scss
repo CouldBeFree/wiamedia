@@ -160,8 +160,17 @@
 
         .slider-block {
             & .slider {
-                max-width: 750px;
-                padding: 0 5px;
+                max-width: 1100px;
+            }
+
+            & .image-holder {
+                height: 100vh;
+                max-height: 420px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
     }
