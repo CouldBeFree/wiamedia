@@ -9,7 +9,6 @@ $(document).ready(function() {
         const scroll = $(window).scrollTop();
         if(scroll > introSectionHeight) {
             button.removeClass('hidden');
-            //animate__bounceOut
         } else {
             button.addClass('hidden');
         }
