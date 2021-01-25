@@ -95,6 +95,18 @@
                 }
             }
         }
+
+        & .center-button {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 16px;
+            background: white;
+            z-index: 100;
+            border-radius: 6px;
+            box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+            bottom: 20px;
+        }
     }
 
     .content-holder {
@@ -173,5 +185,13 @@
                 }
             }
         }
+    }
+
+    .stab-section {
+        height: 100vh;
+    }
+
+    .hidden {
+        display: none;
     }
 }
