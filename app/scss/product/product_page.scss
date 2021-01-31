@@ -13,6 +13,11 @@
         line-height: 24px;
         font-family: Open Sans, sans-serif;
         padding: 12px 34px;
+
+        @media (max-width: 576px) {
+            padding: 10px 20px;
+            line-height: 16px;
+        }
     }
 
     & .intro-section {
@@ -37,9 +42,18 @@
             color: #FFFFFF;
             min-height: 60px;
 
+            @media (max-width: 768px) {
+                min-height: unset;
+            }
+
             &__content {
                 margin: 0;
                 font-family: 'Assistant', sans-serif;
+
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                    padding: 5px 0;
+                }
             }
 
             & .wrap {
@@ -57,6 +71,11 @@
             color: #FFFFFF;
             font-family: 'Assistant', sans-serif;
             margin-bottom: 50px;
+            
+            @media (max-width: 768px) {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
 
             &__left {
                 & .product-name {
@@ -66,6 +85,11 @@
                     margin-bottom: 30px;
                     font-weight: bold;
                     width: 80%;
+
+                    @media (max-width: 768px) {
+                        font-size: 34px;
+                        margin-bottom: 20px;
+                    }
                 }
 
                 & .date {
@@ -92,13 +116,18 @@
                     font-size: 40px;
                     font-family: inherit;
                     margin-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 30px;
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
 
         & .center-button {
             position: fixed;
-            left: calc(50% - 95px);
+            left: 50%;
             transform: translateX(-50%);
             padding: 16px;
             background: white;
@@ -106,6 +135,10 @@
             border-radius: 6px;
             box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
             bottom: 20px;
+
+            @media (max-width: 768px) {
+                padding: 10px;
+            }
         }
     }
 
@@ -113,10 +146,26 @@
         margin-top: 40px;
         font-family: Open Sans, sans-serif;
 
+        @media (max-width: 992px) {
+            flex-direction: column-reverse;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 25px;
+        }
+
         .socials-share-list {
+            @media (max-width: 992px) {
+                flex-direction: row !important;
+                justify-content: center;
+            }
 
             li {
                 margin-bottom: 16px;
+                
+                @media (max-width: 768px) {
+                    margin-bottom: 10px;
+                }
             }
         }
 
@@ -127,10 +176,17 @@
                 font-size: 20px;
                 line-height: 30px;
                 font-family: inherit;
-            }
 
-            &__social {
+                @media (max-width: 992px) {
+                    margin-right: 0;
+                }
 
+                .top-content {
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
             }
 
             .content-holder {
@@ -141,16 +197,32 @@
         .content-block {
             margin-top: 50px;
 
+            @media (max-width: 992px) {
+                margin-top: 20px;
+            }
+
             &__headline {
                 font-family: inherit;
                 font-size: 28px;
                 line-height: 36px;
+                
+                @media (max-width: 768px) {
+                    font-size: 22px;
+                }
             }
 
             &__content {
                 font-family: inherit;
                 font-size: 16px;
                 line-height: 28px;
+
+                @media (max-width: 768px) {
+                    line-height: 24px;
+                }
+
+                @media (max-width: 992px) {
+                    text-align: justify;
+                }
             }
         }
 
@@ -187,11 +259,15 @@
         }
     }
 
-    .stab-section {
-        height: 100vh;
-    }
-
     .hidden {
         display: none;
+    }
+    
+    .desktop-button {
+        display: none;
+        
+        @media (min-width: 768px) {
+            display: block;
+        }
     }
 }
