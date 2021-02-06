@@ -1,0 +1,58 @@
+.checkout {
+  padding-top: 40px;
+
+  .flex {
+    display: flex;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .controls {
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: #393939;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(22%, 22%, 22%, .1);;
+
+    li {
+      flex: 1;
+      text-align: center;
+
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .submit {
+    background: #393939;
+    border-radius: 8px;
+    padding: 12px 70px;
+    border: none;
+    color: white;
+  }
+
+  .headline-wrap {
+    margin-top: 40px;
+    color: #393939;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h3 {
+      margin-top: 24px;
+      font-size: 20px;
+    }
+  }
+
+  .additional-form {
+    &__wrap {
+      color: #393939;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="checkout">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <ul id="controls" class="flex controls">
+                    <li data-step="1" class="active">01 Info client</li>
+                    <li data-step="2">02 INFO EXPÉDITION</li>
+                    <li data-step="3">03 INFO PAYMENT</li>
+                </ul>
+                <div data-step="1" class="headline-wrap">
+                    <h1>Info client</h1>
+                    <h3>Adresse de livraison</h3>
+                </div>
+                <form>
+                    <div class="row form-row">
+                        <div class="col-lg-6">
+                            <label class="label" for="user_last_name">Nom*</label>
+                            <input placeholder="Nom" id="user_last_name" class="input" type="text" name="user[last_name]">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="label" for="user_first_name">Prenom*</label>
+                            <input placeholder="Prenom" id="user_first_name" class="input" type="text" name="user[first_name]">
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <input id="record-phone-code" type="hidden" name="user[phone_code]">
+                        <div class="col-lg-12 input-phone-wrap">
+                            <label class="label" for="user_telephone">Téléphone*</label>
+                            <div class="cc-picker cc-picker-code-select-enabled"><div class="cc-picker-flag ch"></div><span class="cc-picker-code">+41</span> </div><input class="input" type="text" name="user[telephone]" id="user_telephone"><input type="hidden" id="user_phone_code" name="user[phone_code]" value="+41">
+                            <span class="error error-text"></span>
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="col-sm-12 col-md-7">
+                            <label class="label" for="user_address">Adresse postale*</label>
+                            <input placeholder="Adresse postale" class="input" type="text" name="user[address]" id="user_address">
+                            <span class="error error-text"></span>
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <label class="label" for="user_number">Numéro</label>
+                            <input placeholder="Numéro" class="input" type="text" name="user[number]" id="user_number">
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="col-sm-12 col-md-5">
+                            <label class="label" for="user_cp">NPA*</label>
+                            <input placeholder="NPA" class="input" type="text" name="user[cp]" id="user_cp">
+                            <span class="error error-text"></span>
+                        </div>
+
+                        <div class="col-sm-12 col-md-7">
+                            <label class="label" for="user_city">Ville*</label>
+                            <input placeholder="Ville" class="input" type="text" name="user[city]" id="user_city">
+                            <span class="error error-text"></span>
+                        </div>
+                    </div>
+                </form>
+                <div class="additional-form">
+                    <p class="additional-form__wrap">Adresse de facturation</p>
+                    <div>
+                        <label class="checkbox-label" for="additional_form">
+                            <input name="user[condition]" type="hidden" value="0"><input class="checkbox" type="checkbox" value="1" name="user[condition]" id="additional_form">
+                            <span class="checkmark"></span>
+                            Utilisez les mêmes informations pour l'adresse de facturation
+                        </label>
+                    </div>
+                </div>
+                <div class="hidden" id="form-bottom">
+                    <form>
+                        <div class="row form-row">
+                            <div class="col-lg-6">
+                                <label class="label" for="user_last_name_second">Nom*</label>
+                                <input placeholder="Nom" id="user_last_name_second" class="input" type="text" name="user[last_name]">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="label" for="user_first_name_second">Prenom*</label>
+                                <input placeholder="Prenom" id="user_first_name_second" class="input" type="text" name="user[first_name]">
+                            </div>
+                        </div>
+                        <div class="row form-row">
+                            <input id="record-phone-code_second" type="hidden" name="user[phone_code]">
+                            <div class="col-lg-12 input-phone-wrap">
+                                <label class="label" for="user_telephone_second">Téléphone*</label>
+                                <div class="cc-picker cc-picker-code-select-enabled"><div class="cc-picker-flag ch"></div><span class="cc-picker-code">+41</span> </div><input class="input" type="text" name="user[telephone]" id="user_telephone_wia"><input type="hidden" id="user_telephone_second" name="user[phone_code]" value="+41">
+                                <span class="error error-text"></span>
+                            </div>
+                        </div>
+                        <div class="row form-row">
+                            <div class="col-sm-12 col-md-7">
+                                <label class="label" for="user_address_second">Adresse postale*</label>
+                                <input placeholder="Adresse postale" class="input" type="text" name="user[address]" id="user_address_second">
+                                <span class="error error-text"></span>
+                            </div>
+                            <div class="col-sm-12 col-md-5">
+                                <label class="label" for="user_number_second">Numéro</label>
+                                <input placeholder="Numéro" class="input" type="text" name="user[number]" id="user_number_second">
+                            </div>
+                        </div>
+                        <div class="row form-row">
+                            <div class="col-sm-12 col-md-5">
+                                <label class="label" for="user_cp_second">NPA*</label>
+                                <input placeholder="NPA" class="input" type="text" name="user[cp]" id="user_cp_second">
+                                <span class="error error-text"></span>
+                            </div>
+
+                            <div class="col-sm-12 col-md-7">
+                                <label class="label" for="user_city_second">Ville*</label>
+                                <input placeholder="Ville" class="input" type="text" name="user[city]" id="user_city_second">
+                                <span class="error error-text"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <input type="submit" name="commit" value="Se connecter" class="submit-button" data-disable-with="Se connecter">
+            </div>
+        </div>
+        <div>
+            <a href="/">Retour au produit</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

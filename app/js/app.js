@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.slider').slick({
+    /*$('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -46,5 +46,12 @@ $(document).ready(function() {
                 }
             }
         ]
-    });
+    });*/
+
+    const secondForm = $('#form-bottom');
+
+    $('#additional_form').change(function () {
+        // console.log('checked', this.checked);
+        secondForm.toggleClass('hidden', this.checked);
+    })
 })
