@@ -10,7 +10,7 @@
 <div class="checkout">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-lg-8">
+            <div class="col-sm-12 col-lg-7">
                 <ul id="controls" class="flex controls">
                     <li data-step="1" class="active">01 Info client</li>
                     <li data-step="2">02 INFO EXPÉDITION</li>
@@ -18,11 +18,52 @@
                 </ul>
                 <div data-step="1" class="headline-wrap">
                     <h1>Info client</h1>
+                    <div class="product-card mobile">
+                        <div class="product-card__head">
+                            <h4>Panier</h4>
+                        </div>
+                        <div class="product-card__product flex">
+                            <div class="image">
+                                <img src="./images/product.png" alt="product">
+                            </div>
+                            <div class="info">
+                                <h5>Marshall Major III Bluetooth</h5>
+                                <div class="quantity buttons_added">
+                                    <input type="button" value="-" class="minus">
+                                    <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                                    <input type="button" value="+" class="plus">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__form">
+                            <h5>Vous avez un bon?</h5>
+                            <form>
+                                <div class="flex">
+                                    <input placeholder="Voucher" id="voucher2" class="input voucher" type="text" name="voucher">
+                                    <input type="submit" value="Soumettre" class="submit-button">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="flex align-items-center justify-content-between">
+                                <p class="secondary">Subtotal</p>
+                                <p class="primary">X’XXX.XX CHF</p>
+                            </div>
+                            <div class="flex align-items-center justify-content-between">
+                                <p class="secondary">VAT (7.7%) incl.:</p>
+                                <p class="primary">X’XXX.XX CHF</p>
+                            </div>
+                            <div class="flex align-items-center justify-content-between">
+                                <p class="total">Total</p>
+                                <p class="total-value">X’XXX.XX CHF</p>
+                            </div>
+                        </div>
+                    </div>
                     <h3>Adresse de livraison</h3>
                 </div>
                 <form>
                     <div class="row form-row">
-                        <div class="col-sm-12 col-lg-6">
+                        <div class="col-sm-12 col-lg-6 name">
                             <label class="label" for="user_last_name">Nom*</label>
                             <input placeholder="Nom" id="user_last_name" class="input" type="text" name="user[last_name]">
                         </div>
@@ -40,12 +81,12 @@
                         </div>
                     </div>
                     <div class="row form-row">
-                        <div class="col-sm-12 col-md-7">
+                        <div class="col-sm-12 col-md-8">
                             <label class="label" for="user_address">Adresse postale*</label>
                             <input placeholder="Adresse postale" class="input" type="text" name="user[address]" id="user_address">
                             <span class="error error-text"></span>
                         </div>
-                        <div class="col-sm-12 col-md-5">
+                        <div class="col-sm-12 col-md-4">
                             <label class="label" for="user_number">Numéro</label>
                             <input placeholder="Numéro" class="input" type="text" name="user[number]" id="user_number">
                         </div>
@@ -77,7 +118,7 @@
                 <div class="hidden" id="form-bottom">
                     <form>
                         <div class="row form-row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 name">
                                 <label class="label" for="user_last_name_second">Nom*</label>
                                 <input placeholder="Nom" id="user_last_name_second" class="input" type="text" name="user[last_name]">
                             </div>
@@ -95,12 +136,12 @@
                             </div>
                         </div>
                         <div class="row form-row">
-                            <div class="col-sm-12 col-md-7">
+                            <div class="col-sm-12 col-md-8">
                                 <label class="label" for="user_address_second">Adresse postale*</label>
                                 <input placeholder="Adresse postale" class="input" type="text" name="user[address]" id="user_address_second">
                                 <span class="error error-text"></span>
                             </div>
-                            <div class="col-sm-12 col-md-5">
+                            <div class="col-sm-12 col-md-4">
                                 <label class="label" for="user_number_second">Numéro</label>
                                 <input placeholder="Numéro" class="input" type="text" name="user[number]" id="user_number_second">
                             </div>
@@ -130,8 +171,9 @@
                     <input type="submit" name="commit" value="COMMANDER" class="submit-button" data-disable-with="Se connecter">
                 </div>
             </div>
+            <div class="col-sm-12 col-lg-1"></div>
             <div class="col-sm-12 col-lg-4">
-                <div class="product-card">
+                <div class="product-card desktop">
                     <div class="product-card__head">
                         <h4>Panier</h4>
                     </div>

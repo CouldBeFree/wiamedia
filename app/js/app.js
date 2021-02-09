@@ -49,9 +49,11 @@ $(document).ready(function() {
     });*/
 
     const secondForm = $('#form-bottom');
+    const checkbox = $('#additional_form');
 
-    $('#additional_form').change(function () {
-        secondForm.toggleClass('hidden', this.checked); // TODO fix bug when first time uncheck
+    checkbox.prop('checked', true);
+    checkbox.change(function () {
+        secondForm.toggleClass('hidden');
     });
 
     (function quantitySelector () {
