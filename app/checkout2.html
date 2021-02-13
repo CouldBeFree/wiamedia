@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info expedition</title>
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="checkout expedition">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-7">
+                <ul id="controls" class="flex controls">
+                    <li data-step="1">01 Info client</li>
+                    <li data-step="2" class="active">02 INFO EXPÉDITION</li>
+                    <li data-step="3">03 INFO PAYMENT</li>
+                </ul>
+                <div data-step="1" class="headline-wrap">
+                    <h1>Info expédition</h1>
+                    <div class="product-card mobile">
+                        <div class="product-card__head">
+                            <h4>Panier</h4>
+                        </div>
+                        <div class="product-card__product flex">
+                            <div class="image">
+                                <img src="./images/product.png" alt="product">
+                            </div>
+                            <div class="info">
+                                <h5>Marshall Major III Bluetooth</h5>
+                                <div class="quantity buttons_added">
+                                    <input type="button" value="-" class="minus">
+                                    <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                                    <input type="button" value="+" class="plus">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__form">
+                            <h5>Vous avez un bon?</h5>
+                            <form>
+                                <div class="flex">
+                                    <input placeholder="Voucher" id="voucher2" class="input voucher" type="text" name="voucher">
+                                    <input type="submit" value="Soumettre" class="submit-button">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="flex align-items-center justify-content-between">
+                                <p class="secondary">Subtotal</p>
+                                <p class="primary">X’XXX.XX CHF</p>
+                            </div>
+                            <div class="flex align-items-center justify-content-between">
+                                <p class="secondary">VAT (7.7%) incl.:</p>
+                                <p class="primary">X’XXX.XX CHF</p>
+                            </div>
+                            <div class="flex align-items-center justify-content-between">
+                                <p class="total">Total</p>
+                                <p class="total-value">X’XXX.XX CHF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cards">
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <h2 class="headline">Lorem</h2>
+                            <div class="address-info">
+                                <p class="address-info__item">John Doe</p>
+                                <p class="address-info__item">Geneva</p>
+                                <p class="address-info__item">5 - 7 avenue de la Paix 1202</p>
+                                <p class="address-info__item">0344 332 5931</p>
+                            </div>
+                            <div class="bottom">
+                                <a href="/checkout1/html" class="modify">Modifier l'adresse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <h2 class="headline">Lorem</h2>
+                            <div class="address-info">
+                                <p class="address-info__item">John Doe</p>
+                                <p class="address-info__item">Geneva</p>
+                                <p class="address-info__item">5 - 7 avenue de la Paix 1202</p>
+                                <p class="address-info__item">0344 332 5931</p>
+                            </div>
+                            <div class="bottom">
+                                <a href="/checkout1/html" class="modify">Modifier l'adresse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1>Radio</h1>
+                <div class="radio-form">
+                    <form>
+                        <p>Please select your preferred contact method:</p>
+                        <div>
+                            <label class="container">
+                                <div class="content">
+                                    <div class="flex justify-content-between">
+                                        <h5 class="headline">Livraison à domicile</h5>
+                                        <p class="price">+9 CHF</p>
+                                    </div>
+                                    <p class="secondary">Fais toi livrer à ton domicile sans stress</p>
+                                </div>
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">
+                                <div class="content">
+                                    <div class="flex justify-content-between">
+                                        <h5 class="headline">Récupérer au bureau</h5>
+                                        <p class="price">Gratuit</p>
+                                    </div>
+                                    <p class="secondary">Récupérer à nos bureaux à Renen</p>
+                                </div>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="bottom-part flex justify-content-between align-content-center align-items-center">
+                    <div class="back">
+                        <a href="/checkout1.html" class="link flex">
+                            <img src="./images/arrow.svg" alt="arrow">
+                            <span>Retour aux info client</span>
+                        </a>
+                    </div>
+                    <input type="submit" name="commit" value="COMMANDER" class="submit-button" data-disable-with="Se connecter">
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-1"></div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="product-card desktop">
+                    <div class="product-card__head">
+                        <h4>Panier</h4>
+                    </div>
+                    <div class="product-card__product flex">
+                        <div class="image">
+                            <img src="./images/product.png" alt="product">
+                        </div>
+                        <div class="info">
+                            <h5>Marshall Major III Bluetooth</h5>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card__form">
+                        <h5>Vous avez un bon?</h5>
+                        <form>
+                            <div class="flex">
+                                <input placeholder="Voucher" id="voucher" class="input voucher" type="text" name="voucher">
+                                <input type="submit" value="Soumettre" class="submit-button">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="product-card__footer">
+                        <div class="flex align-items-center justify-content-between">
+                            <p class="secondary">Subtotal</p>
+                            <p class="primary">X’XXX.XX CHF</p>
+                        </div>
+                        <div class="flex align-items-center justify-content-between">
+                            <p class="secondary">VAT (7.7%) incl.:</p>
+                            <p class="primary">X’XXX.XX CHF</p>
+                        </div>
+                        <div class="flex align-items-center justify-content-between">
+                            <p class="total">Total</p>
+                            <p class="total-value">X’XXX.XX CHF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>
