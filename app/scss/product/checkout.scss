@@ -104,6 +104,10 @@
       width: 14px;
       margin-right: 10px;
     }
+
+    @media (max-width: 480px) {
+      margin-bottom: 10px;
+    }
   }
 
   .link {
@@ -328,7 +332,6 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 24px;
-        text-transform: uppercase;
       }
 
       .total {
@@ -391,16 +394,28 @@
 
     & .headline-wrap {
       margin-bottom: 45px;
+
+      @media (max-width: 992px) {
+        margin-bottom: 20px;
+      }
     }
 
     & .info-card {
       border: 1px solid #C0C0C0;
       border-radius: 6px;
       padding: 20px 50px;
+      
+      @media (max-width: 992px) {
+        padding: 20px 30px;
+      }
 
       .modify {
         position: relative;
         padding-left: 30px;
+
+        &:hover {
+          color: #393939;
+        }
 
         &::after {
           content: '';
@@ -422,6 +437,10 @@
         margin-top: 10px;
         margin-bottom: 30px;
 
+        @media (max-width: 992px) {
+          margin-bottom: 20px;
+        }
+
         &__item {
           font-family: Open Sans, serif;
           font-style: normal;
@@ -439,10 +458,20 @@
         font-family: Open Sans, serif;
         margin-bottom: 0;
       }
+
+      &.first {
+        @media (max-width: 768px) {
+          margin-bottom: 30px;
+        }
+      }
     }
 
     & .cards {
       margin-bottom: 30px;
+
+      @media (max-width: 992px) {
+        margin-bottom: 20px;
+      }
     }
 
     .radio-form {
@@ -459,7 +488,7 @@
         display: block;
         position: relative;
         padding: 20px 20px 20px 50px;
-        margin-bottom: 12px;
+        margin-bottom: 0;
         cursor: pointer;
         font-size: 22px;
         -webkit-user-select: none;
@@ -468,6 +497,14 @@
         user-select: none;
         border: 1px solid #C0C0C0;
         border-radius: 6px;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+
+          @media (max-width: 992px) {
+            margin-bottom: 20px;
+          }
+        }
 
         & .content {
           & .headline {
@@ -552,6 +589,75 @@
         height: 6px;
         border-radius: 50%;
         background: white;
+      }
+    }
+
+    & .bottom-part {
+      margin-top: 50px;
+      
+      @media (max-width: 992px) {
+        margin-top: 30px;
+      }
+    }
+
+    & .voucher {
+      color: #FA3A44;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  /* third step */
+
+  &.payment {
+    & .headline-wrap {
+      margin-bottom: 25px;
+    }
+
+    & .controls {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -2px;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(#48F6FF, #0F88FF);
+      }
+
+      & .active {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    & .icon {
+      position: relative;
+
+      & .svg {
+        position: absolute;
+        right: 20px;
+        top: 38px;
+      }
+    }
+
+    & .credit-cards {
+      position: absolute;
+      right: 20px;
+      top: 37px;
+      z-index: 1;
+
+      & .visa {
+        margin: 0 8px;
+      }
+
+      & .master-card {
+        position: relative;
+        top: 1px;
       }
     }
   }
