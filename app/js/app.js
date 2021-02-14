@@ -81,41 +81,48 @@ $(document).ready(function() {
         });
     })();
 
-    const cardInput = $('#user_card');
-    function isNumber(evt) {
-        evt = (evt) ? evt : window.event;
-        const charCode = (evt.which) ? evt.which : evt.keyCode;
-        return !(charCode > 31 && (charCode < 48 || charCode > 57));
-    }
-    cardInput.on('keypress', isNumber);
+    (function () {
+        const cardInput = $('#user_card');
+        const cvc = $('#cvc');
 
-    const cvc = $('#cvc');
-    cvc.on('keypress', isNumber);
-
-    var date = document.getElementById('date');
-
-    function checkValue(str, max) {
-        if (str.charAt(0) !== '0' || str == '00') {
-            var num = parseInt(str);
-            if (isNaN(num) || num <= 0 || num > max) num = 1;
-            str = num > parseInt(max.toString().charAt(0))
-            && num.toString().length == 1 ? '0' + num : num.toString();
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            const charCode = (evt.which) ? evt.which : evt.keyCode;
+            return !(charCode > 31 && (charCode < 48 || charCode > 57));
         }
-        return str;
-    }
 
-    date.addEventListener('input', function(e) {
-        this.type = 'text';
-        var input = this.value;
-        if (/\D\/$/.test(input)) input = input.substr(0, input.length - 1);
-        var values = input.split('/').map(function(v) {
-            return v.replace(/\D/g, '')
-        });
-        if (values[0]) values[0] = checkValue(values[0], 12);
-        if (values[1]) values[1] = checkValue(values[1], 31);
-        var output = values.map(function(v, i) {
-            return v.length == 2 && i < 2 ? v + '/' : v;
-        });
-        this.value = output.join('').substr(0, 5);
-    });
+        if (cardInput && cvc) {
+            cardInput.on('keypress', isNumber);
+            cvc.on('keypress', isNumber);
+        }
+
+        var date = document.getElementById('date');
+
+        function checkValue(str, max) {
+            if (str.charAt(0) !== '0' || str == '00') {
+                var num = parseInt(str);
+                if (isNaN(num) || num <= 0 || num > max) num = 1;
+                str = num > parseInt(max.toString().charAt(0))
+                && num.toString().length == 1 ? '0' + num : num.toString();
+            }
+            return str;
+        }
+
+        if (date) {
+            date.addEventListener('input', function(e) {
+                this.type = 'text';
+                var input = this.value;
+                if (/\D\/$/.test(input)) input = input.substr(0, input.length - 1);
+                var values = input.split('/').map(function(v) {
+                    return v.replace(/\D/g, '')
+                });
+                if (values[0]) values[0] = checkValue(values[0], 12);
+                if (values[1]) values[1] = checkValue(values[1], 31);
+                var output = values.map(function(v, i) {
+                    return v.length == 2 && i < 2 ? v + '/' : v;
+                });
+                this.value = output.join('').substr(0, 5);
+            });
+        }
+    })();
 })
