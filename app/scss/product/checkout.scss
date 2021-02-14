@@ -1,5 +1,5 @@
 .checkout {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 50px;
 
   .flex {
@@ -13,8 +13,8 @@
   .controls {
     font-size: 14px;
     color: #393939;
-    cursor: pointer;
     border-bottom: 2px solid rgba(22%, 22%, 22%, .1);
+    margin-top: 40px;
 
     li {
       flex: 1;
